@@ -1,0 +1,10 @@
+const mysql = require('mysql2');
+
+// Create a connection pool to MySQL database
+const dbConnection = mysql.createPool({
+    user: 'evangadi-admin',
+    host: 'localhost',
+    password: '123456',
+    database: 'evangadi-db',
+    connectionLimit: 10
+});
